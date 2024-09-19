@@ -56,7 +56,7 @@
   nav {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
   }
   
   nav a {
@@ -253,12 +253,13 @@
     display:flex;
   }
   
-  .surf-report {
-    background-image: url("https://www.seniorlivingforesight.net/wp-content/uploads/2018/07/coming-soon.jpg"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+  .payroll-tracker {
+    background-image: url(employee-payroll-tracker-img.png), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
     background-size:contain;
     background-position: center;
     background-blend-mode: soft-light;
     display:flex;
+    background-repeat:no-repeat;
   }
   
   /* media queries */
@@ -284,9 +285,9 @@
   
     .page-section > h2,
     .page-section > div {
-      flex: 0 0 100%;
+      flex: 0 0 77%;
     }
-  
+
     .page-section > h2 {
       border-right: none;
       border-bottom: 4px solid var(--primary);
@@ -294,7 +295,9 @@
       padding-bottom: 10px;
       text-align: left;
       font-size: 7vw;
+      flex: 0 0 77%;
     }
+
   
     @media screen and (max-width: 768px) {
       .flex-container {
@@ -305,5 +308,6 @@
         min-height: 150px;
         flex-basis: calc(50% - 1em);
       }
+
   }
   }
